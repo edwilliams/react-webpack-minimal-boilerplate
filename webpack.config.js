@@ -28,7 +28,8 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   devServer: {
-    contentBase: 'public'
+    contentBase: 'public',
+    host: '0.0.0.0' // enable WDS to listen for requests from the network
   },
   plugins: [
     new htmlWebpackPlugin({
